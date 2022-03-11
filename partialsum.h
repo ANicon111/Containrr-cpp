@@ -184,7 +184,7 @@ using namespace containrr;
                 intervals[dim].end=i[dim]+1;
             }else{
                 intervals[dim].end=0;
-                for(unsigned long long pow=getBiggestPow(intervals[dim].end);pow>0&&intervals[dim].end+pow>commands[dim].interval.start;pow=pow>>1){
+                for(unsigned long long pow=getBiggestPow(commands[dim].interval.end);pow>0&&intervals[dim].end+pow>commands[dim].interval.start;pow=pow>>1){
                     intervals[dim].end+=pow;
                     if(intervals[dim].end>=commands[dim].interval.end||getInterval()>=val)
                         intervals[dim].end-=pow;
@@ -220,7 +220,7 @@ using namespace containrr;
             }else{
                 intervals[dim].start=commands[dim].interval.start;
                 intervals[dim].end=0;
-                for(unsigned long long pow=getBiggestPow(lengths[dim]);pow>0&&intervals[dim].end+pow>commands[dim].interval.start;pow=pow>>1){
+                for(unsigned long long pow=getBiggestPow(commands[dim].interval.end);pow>0&&intervals[dim].end+pow>commands[dim].interval.start;pow=pow>>1){
                     intervals[dim].end+=pow;
                     if(intervals[dim].end>=commands[dim].interval.end||getInterval()>val)
                         intervals[dim].end-=pow;
