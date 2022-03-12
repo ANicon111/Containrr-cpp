@@ -176,7 +176,7 @@ using namespace containrr;
                 for(unsigned long long pow=getBiggestPow(commands[dim].interval.end);pow>0&&i[dim]+pow>=commands[dim].interval.start;pow=pow>>1){
                     i[dim]+=pow;
                     sum+=getVal();
-                    if(i[dim]>=commands[dim].interval.end-1||sum>=val){
+                    if(i[dim]>=commands[dim].interval.end||sum>=val){
                         sum-=getVal();
                         i[dim]-=pow;
                     }
@@ -211,7 +211,7 @@ using namespace containrr;
                 for(unsigned long long pow=getBiggestPow(commands[dim].interval.end);pow>0&&i[dim]+pow>=commands[dim].interval.start;pow=pow>>1){
                     i[dim]+=pow;
                     sum+=getVal();
-                    if(i[dim]>=commands[dim].interval.end-1||sum>val){
+                    if(i[dim]>=commands[dim].interval.end||sum>val){
                         sum-=getVal();
                         i[dim]-=pow;
                     }
