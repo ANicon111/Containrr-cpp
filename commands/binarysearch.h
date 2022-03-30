@@ -1,7 +1,7 @@
 #ifndef COMMANDS_BINARYSEARCH_CONTAINRR
 #define COMMANDS_BINARYSEARCH_CONTAINRR
-#include "base.h"
-#include "../base.h"
+#include "command.h"
+#include "interval.h"
 
 namespace containrr{
     using namespace containrr;

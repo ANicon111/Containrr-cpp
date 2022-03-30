@@ -14,8 +14,8 @@ GNU General Public License for more details.
 
 <http://www.gnu.org/licenses/>.  */
 
-#ifndef BASE_CONTAINRR
-#define BASE_CONTAINRR
+#ifndef INTERVAL_CONTAINRR
+#define INTERVAL_CONTAINRR
 
 namespace containrr{
     using namespace containrr;

@@ -1,7 +1,7 @@
 #ifndef PARTIALSUM_CONTAINRR
 #define PARTIALSUM_CONTAINRR
-#include "base.h"
-#include "commands/base.h"
+#include "../commands/interval.h"
+#include "../commands/command.h"
 
 namespace containrr{
 using namespace containrr;

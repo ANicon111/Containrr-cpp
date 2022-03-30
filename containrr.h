@@ -16,7 +16,7 @@ GNU General Public License for more details.
 
 #ifndef ALL_CONTAINRR
 #define ALL_CONTAINRR
-#include "commands.h"
-#include "partialsum.h"
+#include "groups/partialsum.h"
+#include "groups/graph.h"
 #endif
 

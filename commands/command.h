@@ -1,6 +1,6 @@
 #ifndef COMMANDS_BASE_CONTAINRR
 #define COMMANDS_BASE_CONTAINRR
-#include "../base.h"
+#include "interval.h"
 
 namespace containrr{
     using namespace containrr;
