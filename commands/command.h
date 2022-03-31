@@ -5,6 +5,9 @@
 namespace containrr{
     using namespace containrr;
 
+    template<typename T>
+    bool defaultComparison(T a, T b){return a>b;}
+
     template<class T>
     struct Command{
         short id=0;
